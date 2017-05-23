@@ -1,0 +1,12 @@
+{
+  "name": "chat-bot-fb",
+  "version": "1.0.0",
+  "description": "coded by jurou tran",
+  "main": "index.js",
+  "scripts": {
+  	"start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jurou Tran",
+  "license": "ISC"
+}
