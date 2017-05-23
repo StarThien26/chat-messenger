@@ -195,25 +195,25 @@ function findRelationship(userid){
 }
 function sendMessageText(receiver, content){
 	var payload = {
-		recipient: {
-			id: receiver
+		'recipient': {
+			'id': receiver
 		},
-		message: {
-			text: content
+		'message': {
+			'text': content
 		}
 	}
 	callSendAPI(payload)
 }
 function sendMessageImage(receiver, url){
 	var payload = {
-		recipient: {
-			id: receiver
+		'recipient': {
+			'id': receiver
 		},
-		message: {
-			attachment: {
-				type: 'image',
-				payload: {
-					url: url
+		'message': {
+			'attachment': {
+				'type': 'image',
+				'payload': {
+					'url': url
 				}
 			}
 		}
@@ -222,14 +222,14 @@ function sendMessageImage(receiver, url){
 }
 function sendMessageAudio(receiver, url){
 	var payload = {
-		recipient: {
-			id: receiver
+		'recipient': {
+			'id': receiver
 		},
-		message: {
-			attachment: {
-				type: 'audio',
-				payload: {
-					url: url
+		'message': {
+			'attachment': {
+				'type': 'audio',
+				'payload': {
+					'url': url
 				}
 			}
 		}
@@ -238,14 +238,14 @@ function sendMessageAudio(receiver, url){
 }
 function sendMessageFile(receiver, url){
 	var payload = {
-		recipient: {
-			id: receiver
+		'recipient': {
+			'id': receiver
 		},
-		message: {
-			attachment: {
-				type: 'file',
-				payload: {
-					url: url
+		'message': {
+			'attachment': {
+				'type': 'file',
+				'payload': {
+					'url': url
 				}
 			}
 		}
@@ -254,14 +254,14 @@ function sendMessageFile(receiver, url){
 }
 function sendMessageVideo(receiver, url){
 	var payload = {
-		recipient: {
-			id: receiver
+		'recipient': {
+			'id': receiver
 		},
-		message: {
-			attachment: {
-				type: 'video',
-				payload: {
-					url: url
+		'message': {
+			'attachment': {
+				'type': 'video',
+				'payload': {
+					'url': url
 				}
 			}
 		}
@@ -270,17 +270,17 @@ function sendMessageVideo(receiver, url){
 }
 function MessageNoti(receiver, content, sub){
 	var payload = {
-		recipient: {
-			id: receiver
+		'recipient': {
+			'id': receiver
 		},
-		message: {
-			attachment: {
-				type: 'template',
-				payload: {
-					template_type: 'generic',
-					elements: [{
-						title: content,
-						subtitle: sub
+		'message': {
+			'attachment': {
+				'type': 'template',
+				'payload': {
+					'template_type': 'generic',
+					'elements': [{
+						'title': content,
+						'subtitle': sub
 					}]
 				}
 			}
@@ -290,30 +290,30 @@ function MessageNoti(receiver, content, sub){
 }
 function MessageHome(receiver){
 	var payload = {
-		recipient: {
-			id: receiver
+		'recipient': {
+			'id': receiver
 		},
-		message: {
-			attachment: {
-				type: 'template',
-				payload: {
-					template_type: 'generic',
-					elements: [
+		'message': {
+			'attachment': {
+				'type': 'template',
+				'payload': {
+					'template_type': 'generic',
+					'elements': [
 						{
-							title: "Rắc Thính",
-							subtitle: "Thả thính cộng đồng",
-							item_url: "http://google.com",
-							image_url: "http://giaitri.danongonline.com.vn/wp-content/uploads/2016/11/1-1479377234390.jpg",
-							buttons: [
+							'title': "Rắc Thính",
+							'subtitle': "Thả thính cộng đồng",
+							'item_url': "http://google.com",
+							'image_url': "http://giaitri.danongonline.com.vn/wp-content/uploads/2016/11/1-1479377234390.jpg",
+							'buttons': [
 								{
-									type: "postback",
-									title: "Bắt Đầu Thả Tính",
-									payload: "start",
+									'type': "postback",
+									'title': "Bắt Đầu Thả Tính",
+									'payload': "start",
 								},
 								{
-									type: "postback",
-									titl: "Kết Thúc Trò Chuyện",
-									payload: "stop",
+									'type': "postback",
+									'title': "Kết Thúc Trò Chuyện",
+									'payload': "stop",
 								}
 							]
 						}
